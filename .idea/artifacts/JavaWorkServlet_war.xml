@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JavaWorkServlet:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>JavaWorkServlet</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="JavaWorkServlet-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="JavaWorkServlet:war exploded" />
+    </root>
+  </artifact>
+</component>
