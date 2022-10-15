@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893d4cdc-c2fb-4a97-807b-84da3ddbcb74" name="Changes" comment="add dependency postgresql">
+    <list default="true" id="893d4cdc-c2fb-4a97-807b-84da3ddbcb74" name="Changes" comment="edit code">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaworkservlet/InsertData.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaworkservlet/timerJavaServise.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/singltoneBean/FixedTimerBean.java" afterDir="false" />
@@ -243,6 +243,7 @@
       <workItem from="1665389822767" duration="53207000" />
       <workItem from="1665653882363" duration="19735000" />
       <workItem from="1665825126976" duration="1507000" />
+      <workItem from="1665858152958" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="servlet">
       <created>1665481702781</created>
@@ -258,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665825310851</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit code">
+      <created>1665858180517</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665858180517</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +287,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="servlet" />
     <MESSAGE value="add dependency postgresql" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dependency postgresql" />
+    <MESSAGE value="edit code" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit code" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

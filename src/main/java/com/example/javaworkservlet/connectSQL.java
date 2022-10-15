@@ -21,7 +21,7 @@ public class connectSQL extends HttpServlet {
 
   private final String url = "jdbc:postgresql://localhost:8081/postgres";
   private final String user = "postgres";
-  private final String password = "sadid333";
+  private final String password = "password";
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {

@@ -23,7 +23,7 @@ public class deleteSingltone {
       public void run() {
         {
           try (Connection conn = DriverManager.getConnection(
-              "jdbc:postgresql://localhost:8081/postgres", "postgres", "sadid333")) {
+              "jdbc:postgresql://localhost:8081/postgres", "postgres", "password")) {
             Statement stmt = conn.createStatement();
             // выполняем запрос delete SQL
             stmt.execute("DELETE FROM \"lastName\"\n"

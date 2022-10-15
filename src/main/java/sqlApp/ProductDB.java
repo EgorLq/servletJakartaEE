@@ -6,7 +6,7 @@ public class ProductDB {
 
   private static String url = "jdbc:postgresql://localhost:8081/postgres";
   private static String username = "postgres";
-  private static String password = "sadid333";
+  private static String password = "password";
 
   public static ArrayList<Product> select() {
 

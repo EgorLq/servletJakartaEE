@@ -18,7 +18,7 @@ public class testServlet extends HttpServlet {
   try{
     String url = "jdbc:postgresql://localhost:8081/postgres";
     String username = "postgres";
-    String password = "sadid333";
+    String password = "password";
     try (Connection conn = DriverManager.getConnection(url, username, password)){
 
       writer.println("Connection to ProductDB succesfull!");

@@ -11,7 +11,7 @@ public class DBconnector {
 
      String url = "jdbc:postgresql://localhost:8081/postgres";
      String username = "postgres";
-     String password = "sadid333";
+     String password = "password";
 
     Connection con = DriverManager.getConnection(url,
         username,
