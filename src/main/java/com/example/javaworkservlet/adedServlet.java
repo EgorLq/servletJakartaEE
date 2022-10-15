@@ -12,10 +12,11 @@ import sqlApp.ProductDB;
 
 @WebServlet(name = "adedServlet", value = "/aded-Servlet")
 public class adedServlet extends HttpServlet {
+
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-    getServletContext().getRequestDispatcher("/create.jsp").forward(request, response);
+    getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
   }
 
   protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -29,7 +30,7 @@ public class adedServlet extends HttpServlet {
     }
     catch(Exception ex) {
 
-      getServletContext().getRequestDispatcher("/create.jsp").forward(request, response);
+      getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
   }
 }

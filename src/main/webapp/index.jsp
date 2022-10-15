@@ -14,34 +14,26 @@
     <input type="submit" value="Submit">
 </form>
 <pre>  </pre>
-<form action="/JavaWorkServlet_war_exploded/data-Base" method="POST">
+<form action="/JavaWorkServlet_war_exploded/products1" >
     <h1>Database information</h1>
     <br><br>
     <input type="submit" value="Submit">
 </form>
 <pre>  </pre>
-<h2>Products List</h2>
-<p><a href='<c:url value="/create" />'>Create new</a></p>
-<table>
-    <tr><th>Name</th><th></th></tr>
-    <c:forEach var="product" items="${products}">
-        <tr><td>${product.name}</td>
-            <td>${product.price}</td>
-            <td>
-                <a href='<c:url value="/edit?id=${product.id}" />'>Edit</a> |
-                <form method="post" action='<c:url value="/delete" />' style="display:inline;">
-                    <input type="hidden" name="id" value="${product.id}">
-                    <input type="submit" value="Delete">
-                </form>
-            </td></tr>
-    </c:forEach>
-</table>
+<form action="./InsertData" method="post">
+    <p>ID:</p>
+    <!-- Create an element with mandatory name attribute,
+    so that data can be transfer to the servlet using getParameter() -->
+    <input type="text" name="id"/>
+    <br/>
+    <p>String:</p>
+    <input type="text" name="string"/>
+    <br/><br/><br/>
+    <input type="submit"/>
+</form>
 <pre>  </pre>
-<h3>New product</h3>
-<form  method="post">
-    <label>Name</label><br>
-    <input name="name"/><br><br>
-    <input type="submit" value="Save" />
+<form action="/JavaWorkServlet_war_exploded/test-servlet" >
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>

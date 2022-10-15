@@ -14,7 +14,7 @@ public class HelloServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
-    connectSQL connectSQL = new connectSQL();
+
 
     String firstName = request.getParameter("name");
 

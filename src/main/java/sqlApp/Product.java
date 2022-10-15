@@ -1,5 +1,6 @@
 package sqlApp;
 
+
 import java.io.Serializable;
 
 public class Product implements Serializable {
@@ -10,13 +11,13 @@ public class Product implements Serializable {
   private String name;
 
 
-  public Product(String name){ }
-  public Product(String name, int price){
+  public Product(String name){
+
 
     this.name = name;
 
   }
-  public Product(int id, String name, int price){
+  public Product(int id, String name){
 
     this.id = id;
     this.name = name;

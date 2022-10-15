@@ -12,7 +12,6 @@ public class ProductDB {
 
     ArrayList<Product> products = new ArrayList<Product>();
     try{
-      Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
       try (Connection conn = DriverManager.getConnection(url, username, password)){
 
         Statement statement = conn.createStatement();
@@ -21,7 +20,7 @@ public class ProductDB {
 
           int id = resultSet.getInt(1);
           String name = resultSet.getString(2);
-          Product product = new Product(name, id);
+          Product product = new Product(id, name);
           products.add(product);
         }
       }
@@ -35,7 +34,6 @@ public class ProductDB {
 
     Product product = null;
     try{
-      Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
       try (Connection conn = DriverManager.getConnection(url, username, password)){
 
         String sql = "SELECT * FROM products WHERE id=?";
@@ -46,7 +44,7 @@ public class ProductDB {
 
             int prodId = resultSet.getInt(1);
             String name = resultSet.getString(2);
-            product = new Product(name, prodId);
+            product = new Product(prodId, name);
           }
         }
       }
@@ -59,7 +57,6 @@ public class ProductDB {
   public static int insert(Product product) {
 
     try{
-      Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
       try (Connection conn = DriverManager.getConnection(url, username, password)){
 
         String sql = "INSERT INTO products (name, price) Values (?, ?)";
@@ -79,7 +76,6 @@ public class ProductDB {
   public static int update(Product product) {
 
     try{
-      Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
       try (Connection conn = DriverManager.getConnection(url, username, password)){
 
         String sql = "UPDATE products SET name = ?, price = ? WHERE id = ?";
@@ -99,7 +95,6 @@ public class ProductDB {
   public static int delete(int id) {
 
     try{
-      Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
       try (Connection conn = DriverManager.getConnection(url, username, password)){
 
         String sql = "DELETE FROM products WHERE id = ?";
